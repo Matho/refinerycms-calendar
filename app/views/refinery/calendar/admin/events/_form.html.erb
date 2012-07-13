@@ -11,7 +11,7 @@
 
   <div class="field">
     <p>
-      <%= f.check_box :featured %>
+      <%= f.check_box :featured  %>
       <%= f.label :featured, :class => 'stripped' %>
     </p>
   </div>
@@ -32,7 +32,7 @@
   </div>
 
   <div class='field'>
-    <%= f.label :venue_id, 'Venue' %>
+    <%= f.label :venue_id, t('refinery.plugins.venues.title') %>
     <%= f.collection_select :venue_id, @venues, :id, :name, { :include_blank => 'None' }, :class => 'chzn-select', :'data-placeholder' => 'Search Venues', :style => 'width: 300px;' %>
   </div>
 
@@ -77,9 +77,10 @@
       page_options.init(false, '', '');
 
       $('#event_venue_id').chosen({
-        no_results_text: "No results matched",
+        no_results_text: "<%= t('refinery.calendar.admin.events.new.no_results_matched') %>",
         allow_single_deselect: true
       });
     });
   </script>
 <% end %>
+
