@@ -1,0 +1,63 @@
+sk:
+  refinery:
+    plugins:
+      venues:
+        title: Miesto konania
+      calendar:
+        title: Kalendár
+    calendar:
+      admin:
+        shared:
+          links:
+            manage_events: Spravovať  udalosti
+            manage_venues: Spravovať miesta konania
+        venues:
+          actions:
+            create_new: Pridať nové miesto konania
+            reorder: Zmeniť usporiadanie miest konania
+            reorder_done: Uložiť usporiadanie
+          records:
+            title: Miesta konania
+            sorry_no_results: Prepáč! Nenašli sa žiadne záznamy.
+            no_items_yet: Zatiať neboli pridané žiadne miesta konania. Klikni na "Pridať nové miesto konania" pre pridanie prvého.
+          venue:
+            view_live_html: Zobraziť náhľad miesta konania <br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť miesto konania
+            delete: Zmazať toto miesto konania
+        events:
+          actions:
+            create_new: Pridať novú udalosť
+            reorder: Zmeniť usporiadanie udalostí
+            reorder_done: Uložiť usporiadanie
+          records:
+            title: Udalosti
+            sorry_no_results: Prepáč! Nenašli sa žiadne záznamy.
+            no_items_yet: Zatiaľ neboli pridané žiadne udalosti. Klikni na  "Pridať novú udalosť" pre pridanie prvej.
+          event:
+            view_live_html: Zobraziť náhľad udalosti <br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť udalosť
+            delete: Zmazať udalosť
+          new:
+            no_results_matched: Nenašlo sa miesto konania
+      venues:
+        show:
+          other: Ďalšie miesta konania
+      events:
+        show:
+          other: Ďalšie udalosti
+  activerecord:
+    attributes:
+      refinery/calendar/venue:
+        name: Názov
+        address: Adresa
+        url: Url
+        phone: Tel.
+      refinery/calendar/event:
+        title: Názov
+        start_at: Začiatok
+        end_at: Koniec
+        registration_link: Odkaz na registráciu
+        excerpt: Úvodný text
+        description: Popis
+        featured: Odporúčané
+
